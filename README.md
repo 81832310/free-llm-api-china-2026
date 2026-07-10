@@ -4,7 +4,7 @@
 
 ## 在线访问
 
-- **Gitee Pages**: `https://你的用户名.gitee.io/free-llm-api-china-2026/free-llm-api-china-2026.html`
+- **Gitee Pages**: `https://huangcaiming.gitee.io/free-llm-api-china-2026/`
 - 部署后可在手机/平板/任意设备上查看
 
 ## 自动更新机制

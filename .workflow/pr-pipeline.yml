@@ -11,7 +11,7 @@ stages:
         displayName: 检查报告文件
         commands:
           - echo "=== 纯前端项目，无需构建 ==="
-          - test -f free-llm-api-china-2026.html && echo "HTML 报告: OK" || echo "HTML 报告: MISSING"
+          - test -f index.html && echo "入口页 index.html: OK" || echo "入口页 index.html: MISSING"
           - test -f assets/charts.js && echo "图表 JS: OK" || echo "图表 JS: MISSING"
           - echo "=== 检查完成 ==="
 triggers:
