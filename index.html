@@ -371,10 +371,10 @@
   <header class="hero">
     <span class="badge">RESEARCH REPORT · 2026-07</span>
     <h1>国内免费大模型 API 调研报告</h1>
-    <p class="subtitle">覆盖 15 家国内厂商 + 4 家国际平台，对比免费额度、模型能力、上下文长度、接入方式等核心维度，附选型决策树与避坑指南。</p>
+    <p class="subtitle">覆盖 16 家国内厂商 + 4 家国际平台，对比免费额度、模型能力、上下文长度、接入方式等核心维度，附选型决策树与避坑指南。</p>
     <div class="meta">
-      <span>数据截止：2026-07-10</span>
-      <span>平台数：19</span>
+      <span>数据截止：2026-07-11</span>
+      <span>平台数：20</span>
       <span>来源：官方定价页 + 行业汇总</span>
     </div>
   </header>
@@ -412,7 +412,7 @@
       <div class="callout">
         <p><strong>四句话结论：</strong></p>
         <p>1. <strong>国内项目首选智谱 AI</strong> — GLM-4-Flash 永久免费，新用户还有 2000 万 Token，OpenAI 兼容格式接入简单<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-2">[2]</a></sup>。</p>
-        <p>2. <strong>追求极致性价比看 DeepSeek</strong> — V4-Flash 输入低至 $0.14/百万 Token，新用户送 100 万 Token<sup><a href="#cite-3">[3]</a></sup><sup><a href="#cite-4">[4]</a></sup>。</p>
+        <p>2. <strong>追求极致性价比看 DeepSeek</strong> — V4-Flash 输入低至 $0.14/百万 Token，新用户送 500 万 Token<sup><a href="#cite-3">[3]</a></sup><sup><a href="#cite-14">[14]</a></sup>。</p>
         <p>3. <strong>需要多模型对比选阿里云百炼</strong> — 每个模型 100 万 Token、3 个月有效，覆盖通义千问、DeepSeek、Kimi 等全系<sup><a href="#cite-1">[1]</a></sup>。</p>
         <p>4. <strong>办公场景 + 白嫖 DeepSeek 选商汤</strong> — 公测期完全免费，每 5 小时 1500 次调用，自带 DeepSeek V4 Flash（1M 上下文），无需实名认证<sup><a href="#cite-8">[8]</a></sup>。</p>
         <p>5. <strong>编程能力优先选 MiniMax</strong> — M2.5 系列 SWE-Bench 80%+，Starter 档 40 次/5 小时免费，OpenAI 兼容<sup><a href="#cite-10">[10]</a></sup>。</p>
@@ -574,10 +574,19 @@
               <td>华为云 SDK</td>
               <td>★★★</td>
             </tr>
+            <tr>
+              <td><strong>蓝耘元生代</strong></td>
+              <td>新用户 500 万 Token（DeepSeek R1/V3 等）</td>
+              <td><span class="tag tag-limited">赠送额度</span></td>
+              <td>DeepSeek R1/V3、Qwen 等</td>
+              <td>依模型</td>
+              <td>OpenAI 兼容</td>
+              <td>★★★</td>
+            </tr>
           </tbody>
         </table>
       </div>
-      <p style="font-size:0.82rem;color:var(--muted);">数据来源：智谱 AI 官方定价页<sup><a href="#cite-2">[2]</a></sup>、DeepSeek 官方 API 文档<sup><a href="#cite-3">[3]</a></sup>、硅基流动模型中心<sup><a href="#cite-5">[5]</a></sup>、商汤 SenseNova 官方文档<sup><a href="#cite-8">[8]</a></sup>及行业汇总<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-12">[12]</a></sup>。其余平台数据来自行业汇总文章 [P2]，建议使用前访问官网确认最新政策。</p>
+      <p style="font-size:0.82rem;color:var(--muted);">数据来源：智谱 AI 官方定价页<sup><a href="#cite-2">[2]</a></sup>、DeepSeek 官方 API 文档<sup><a href="#cite-3">[3]</a></sup>、硅基流动模型中心<sup><a href="#cite-5">[5]</a></sup>、商汤 SenseNova 官方文档<sup><a href="#cite-8">[8]</a></sup>及行业汇总<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-12">[12]</a></sup><sup><a href="#cite-14">[14]</a></sup><sup><a href="#cite-15">[15]</a></sup>。其余平台数据来自行业汇总文章 [P2]，建议使用前访问官网确认最新政策。</p>
     </section>
 
     <!-- 免费额度可视化 -->
@@ -637,7 +646,7 @@
           <div class="pc-col">
             <h4>免费额度与定价 [P0]</h4>
             <ul>
-              <li>官方定价页<strong>未显示免费 Token 赠送</strong>，全部按量计费 [P2]</li>
+              <li><strong>新用户注册赠送 500 万 Token</strong>（平台活动，用完恢复付费）[P2]</li>
               <li>V4-Flash：$0.14/M 输入，$0.28/M 输出</li>
               <li>V4-Pro：$0.435/M 输入，$0.87/M 输出</li>
               <li>缓存命中：$0.0028/M（Flash）/ $0.0036/M（Pro）</li>
@@ -762,6 +771,34 @@
         <p style="font-size:0.85rem;color:var(--muted);">适用场景：办公自动化（数据分析/PPT/报告）、多模态理解、白嫖 DeepSeek V4。注册地址：platform.sensenova.cn</p>
       </div>
 
+      <!-- 蓝耘 -->
+      <div class="platform-card">
+        <div class="pc-header">
+          <span class="pc-name">蓝耘元生代</span>
+          <span class="pc-rating">★★★ 算力新选</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-col">
+            <h4>免费额度 [P2]</h4>
+            <ul>
+              <li>新用户赠送 <strong>500 万 Token</strong>，不限时</li>
+              <li>支持 DeepSeek R1/V3 满血版</li>
+              <li>按 token 计费、按小时整点结算</li>
+            </ul>
+          </div>
+          <div class="pc-col">
+            <h4>特点</h4>
+            <ul>
+              <li>云原生推理引擎，支持在线体验 & API 调用</li>
+              <li>覆盖 DeepSeek、Qwen 等主流模型</li>
+              <li>MaaS 平台，提供多种开箱即用 AI 模型</li>
+              <li>支持 MCP 服务生态</li>
+            </ul>
+          </div>
+        </div>
+        <p style="font-size:0.85rem;color:var(--muted);">适用场景：DeepSeek 深度体验、本地知识库构建、AI 应用快速原型。注册地址：蓝耘元生代智算云平台</p>
+      </div>
+
       <!-- 其他平台简述 -->
       <h3>其他平台简述</h3>
 
@@ -799,7 +836,7 @@
       <p>ERNIE-Speed-8K <strong>永久免费</strong>且 QPS=50。每模型 100 万 Token（ERNIE-4.5 系列 3 个月有效）。现已接入 DeepSeek、通义千问、Kimi 等第三方模型，平台覆盖面大幅扩展<sup><a href="#cite-1">[1]</a></sup>。</p>
 
       <h4>Kimi（月之暗面）</h4>
-      <p>新用户赠送 <strong>15 元代金券</strong>（永久有效），按 K2.6 价格约相当于 230 万 Token 输入量。262K 超长上下文，支持图片和视频理解。最新模型 <strong>Kimi K2.6</strong>（输入 ¥6.50/M、输出 ¥27.00/M）。2026 年 6 月发布 <strong>Kimi K2.7 Code</strong> 编程大模型。K2.6 支持长思考模式，代码生成能力大幅提升<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-10">[10]</a></sup>。</p>
+      <p>新用户赠送 <strong>15 元代金券</strong>（永久有效），按 K2.6 价格约相当于 230 万 Token 输入量。262K 超长上下文，支持图片和视频理解。最新模型 <strong>Kimi K2.6</strong>（输入 ¥6.50/M、输出 ¥27.00/M）。2026 年 6 月发布 <strong>Kimi K2.7 Code</strong> 编程大模型（1.1 万亿参数，256K 上下文）。<strong>2026 年 7 月 3 日，Kimi K2.7 Code 接入 GitHub Copilot</strong>，成为 Copilot 首个开源模型集成<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-10">[10]</a></sup><sup><a href="#cite-16">[16]</a></sup>。</p>
 
       <h4>腾讯云混元</h4>
       <p><strong>混元 Hy3（2026-07-06 发布）</strong>：295B MoE 架构（21B 激活参数），已开源且免费商用。通用资源包 100 万 Token（有效期 1 年），Embedding 额外 100 万 Token。微信"AI 小程序成长计划"赠送 <strong>10 亿 Token + 10 万张 AI 生图</strong>（微信小程序/云开发特定活动，非所有新用户默认额度，7 月 1 日起分批到账，补发之日起 6 个月有效）<sup><a href="#cite-9">[9]</a></sup>。适合腾讯生态、大模型开源部署。</p>
@@ -1022,7 +1059,7 @@
     </section>
 
     <div class="disclaimer">
-      <strong>免责声明：</strong>本报告数据截至 2026 年 7 月 10 日，大模型 API 免费政策和定价调整频繁，使用前请务必访问各平台官网确认最新政策。标注 [P0] 的数据来自官方定价页，标注 [P2] 的数据来自行业汇总文章，可能存在滞后。本报告不构成任何投资或采购建议。
+      <strong>免责声明：</strong>本报告数据截至 2026 年 7 月 11 日，大模型 API 免费政策和定价调整频繁，使用前请务必访问各平台官网确认最新政策。标注 [P0] 的数据来自官方定价页，标注 [P2] 的数据来自行业汇总文章，可能存在滞后。本报告不构成任何投资或采购建议。
     </div>
 
   </main>
@@ -1082,6 +1119,18 @@
         <li id="cite-13">
           <span class="src-title">今日头条, 30+大模型API免费领地图. 华为云ModelArts免费试用包及盘古大模型5.0接入方式.</span>
           <a class="src-url" href="http://m.toutiao.com/group/7644955430778716672/" target="_blank" rel="noopener">http://m.toutiao.com/group/7644955430778716672/</a>
+        </li>
+        <li id="cite-14">
+          <span class="src-title">今日头条, 2026实测7个免费DeepSeek V4渠道. platform.deepseek.com新账号自动赠送500万免费token，无需绑定银行卡.</span>
+          <a class="src-url" href="http://m.toutiao.com/group/7660538710462562866/" target="_blank" rel="noopener">http://m.toutiao.com/group/7660538710462562866/</a>
+        </li>
+        <li id="cite-15">
+          <span class="src-title">CSDN, 蓝耘DS满血版震撼来袭！500万Tokens限时免费. 蓝耘元生代推理引擎上线DeepSeek R1/V3，新用户享500万不限时免费Token.</span>
+          <a class="src-url" href="https://blog.csdn.net/djdjiejsn/article/details/145798583" target="_blank" rel="noopener">https://blog.csdn.net/djdjiejsn/article/details/145798583</a>
+        </li>
+        <li id="cite-16">
+          <span class="src-title">搜狐科技/IT之家, GitHub Copilot首次接入开源模型Kimi K2.7 Code. 2026年7月3日，月之暗面Kimi K2.7 Code接入GitHub Copilot，成为Copilot首个开源模型.</span>
+          <a class="src-url" href="https://m.sohu.com/a/1045306085_122066678/" target="_blank" rel="noopener">https://m.sohu.com/a/1045306085_122066678/</a>
         </li>
       </ol>
     </div>

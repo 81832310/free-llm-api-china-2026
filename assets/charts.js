@@ -16,14 +16,14 @@
   var platforms = [
     '智谱 AI', '商汤 SenseNova', '硅基流动', 'DeepSeek', '阿里云百炼',
     '火山引擎', '百度千帆', 'Kimi', '腾讯混元', '讯飞星火', 'MiniMax',
-    '京东 JoyClaw', '零一万物', '昆仑万维天工', '华为云盘古'
+    '京东 JoyClaw', '零一万物', '昆仑万维天工', '华为云盘古', '蓝耘元生代'
   ];
 
   // 免费额度规模评分（1-5，综合考量额度大小、刷新机制、持续性）
-  var quotaScore = [5, 4, 4, 2, 3, 3, 3, 1, 3, 2, 2, 2, 2, 2, 2];
+  var quotaScore = [5, 4, 4, 3, 3, 3, 3, 1, 3, 2, 2, 2, 2, 2, 2, 3];
 
   // 永久免费模型数
-  var permanentFreeModels = [3, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0];
+  var permanentFreeModels = [3, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
   chart.setOption({
     animation: false,
