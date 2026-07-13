@@ -373,8 +373,8 @@
     <h1>国内免费大模型 API 调研报告</h1>
     <p class="subtitle">覆盖 16 家国内厂商 + 4 家国际平台，对比免费额度、模型能力、上下文长度、接入方式等核心维度，附选型决策树与避坑指南。</p>
     <div class="meta">
-      <span>数据截止：2026-07-12</span>
-      <span>平台数：20</span>
+      <span>数据截止：2026-07-13</span>
+      <span>平台数：21</span>
       <span>来源：官方定价页 + 行业汇总</span>
     </div>
   </header>
@@ -384,7 +384,7 @@
     <!-- 执行摘要 -->
     <section id="summary">
       <h2>执行摘要</h2>
-      <p>2025 年下半年以来，国内大模型厂商开启了"免费额度军备竞赛"。DeepSeek V4 以价格战撕开口子，智谱用<strong>永久免费模型</strong>建起护城河，阿里云百炼靠<strong>多模型聚合</strong>吸引开发者，商汤则以<strong>公测期完全免费 + 每 5 小时刷新额度</strong>杀入战场。截至 2026 年 7 月，国内已有至少 10 家厂商提供可免费调用的大模型 API<sup><a href="#cite-1">[1]</a></sup>。京东 JoyClaw 于 7 月推出"日送一万积分"限时活动，成为最新免费 API 入口<sup><a href="#cite-11">[11]</a></sup>。</p>
+      <p>2025 年下半年以来，国内大模型厂商开启了"免费额度军备竞赛"。DeepSeek V4 以价格战撕开口子，智谱用<strong>永久免费模型</strong>建起护城河，阿里云百炼靠<strong>多模型聚合</strong>吸引开发者，商汤则以<strong>公测期完全免费 + 每 5 小时刷新额度</strong>杀入战场。截至 2026 年 7 月，国内已有至少 10 家厂商提供可免费调用的大模型 API<sup><a href="#cite-1">[1]</a></sup>。京东 JoyClaw 于 7 月推出"日送一万积分"限时活动；<strong>魔搭社区（ModelScope）</strong>每日 2000 次免费调用成为开发者新选择<sup><a href="#cite-17">[17]</a></sup>。</p>
 
       <div class="summary-grid">
         <div class="summary-card">
@@ -423,7 +423,7 @@
     <!-- 核心对比表 -->
     <section id="comparison-table">
       <h2>国内平台免费额度横向对比</h2>
-      <p>下表汇总了 15 家国内厂商的核心免费政策，数据截至 2026 年 7 月 12 日。<span style="color:var(--muted);font-size:0.85rem;">标注 [P0] 表示来自官方定价页/文档，[P2] 表示来自行业汇总文章。</span></p>
+      <p>下表汇总了 16 家国内厂商的核心免费政策，数据截至 2026 年 7 月 13 日。<span style="color:var(--muted);font-size:0.85rem;">标注 [P0] 表示来自官方定价页/文档，[P2] 表示来自行业汇总文章。</span></p>
 
       <div class="table-wrap">
         <table>
@@ -583,10 +583,19 @@
               <td>OpenAI 兼容</td>
               <td>★★★</td>
             </tr>
+            <tr>
+              <td><strong>魔搭社区</strong></td>
+              <td>每天 2000 次调用（单模型上限约 500 次）</td>
+              <td><span class="tag tag-free">按天刷新</span></td>
+              <td>Qwen、DeepSeek、GLM、MiniMax 等 2 万+模型</td>
+              <td>依模型</td>
+              <td>阿里云账号绑定</td>
+              <td>★★★★</td>
+            </tr>
           </tbody>
         </table>
       </div>
-      <p style="font-size:0.82rem;color:var(--muted);">数据来源：智谱 AI 官方定价页<sup><a href="#cite-2">[2]</a></sup>、DeepSeek 官方 API 文档<sup><a href="#cite-3">[3]</a></sup>、硅基流动模型中心<sup><a href="#cite-5">[5]</a></sup>、商汤 SenseNova 官方文档<sup><a href="#cite-8">[8]</a></sup>及行业汇总<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-12">[12]</a></sup><sup><a href="#cite-14">[14]</a></sup><sup><a href="#cite-15">[15]</a></sup>。其余平台数据来自行业汇总文章 [P2]，建议使用前访问官网确认最新政策。</p>
+      <p style="font-size:0.82rem;color:var(--muted);">数据来源：智谱 AI 官方定价页<sup><a href="#cite-2">[2]</a></sup>、DeepSeek 官方 API 文档<sup><a href="#cite-3">[3]</a></sup>、硅基流动模型中心<sup><a href="#cite-5">[5]</a></sup>、商汤 SenseNova 官方文档<sup><a href="#cite-8">[8]</a></sup>、魔搭社区官方文档<sup><a href="#cite-17">[17]</a></sup>及行业汇总<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-12">[12]</a></sup><sup><a href="#cite-14">[14]</a></sup><sup><a href="#cite-15">[15]</a></sup>。其余平台数据来自行业汇总文章 [P2]，建议使用前访问官网确认最新政策。</p>
     </section>
 
     <!-- 免费额度可视化 -->
@@ -857,6 +866,9 @@
 
       <h4>华为云盘古大模型</h4>
       <p>新用户实名认证后可在 AI Gallery 领取免费试用包，含推理和微调额度；另有每月约 <strong>50 万 Tokens</strong> 免费额度。盘古大模型 5.0 覆盖 NLP、CV 等多模态能力，通过华为云 ModelArts 控制台接入<sup><a href="#cite-12">[12]</a></sup><sup><a href="#cite-13">[13]</a></sup>。适合政企合规场景、华为云生态用户。</p>
+
+      <h4>魔搭社区（ModelScope）</h4>
+      <p>阿里旗下开源模型社区，绑定阿里云账号后每日可享受 <strong>2000 次免费 API 调用</strong>（单模型上限约 500 次/天），覆盖 2 万+模型，包括 Qwen、DeepSeek、GLM、MiniMax 等热门系列。按天重置额度，适合模型选型对比、轻量体验和开源模型探索<sup><a href="#cite-17">[17]</a></sup>。</p>
     </section>
 
     <!-- 国际平台补充 -->
@@ -1061,7 +1073,7 @@
     </section>
 
     <div class="disclaimer">
-      <strong>免责声明：</strong>本报告数据截至 2026 年 7 月 12 日，大模型 API 免费政策和定价调整频繁，使用前请务必访问各平台官网确认最新政策。标注 [P0] 的数据来自官方定价页，标注 [P2] 的数据来自行业汇总文章，可能存在滞后。本报告不构成任何投资或采购建议。
+      <strong>免责声明：</strong>本报告数据截至 2026 年 7 月 13 日，大模型 API 免费政策和定价调整频繁，使用前请务必访问各平台官网确认最新政策。标注 [P0] 的数据来自官方定价页，标注 [P2] 的数据来自行业汇总文章，可能存在滞后。本报告不构成任何投资或采购建议。
     </div>
 
   </main>
@@ -1133,6 +1145,10 @@
         <li id="cite-16">
           <span class="src-title">搜狐科技/IT之家, GitHub Copilot首次接入开源模型Kimi K2.7 Code. 2026年7月3日，月之暗面Kimi K2.7 Code接入GitHub Copilot，成为Copilot首个开源模型.</span>
           <a class="src-url" href="https://m.sohu.com/a/1045306085_122066678/" target="_blank" rel="noopener">https://m.sohu.com/a/1045306085_122066678/</a>
+        </li>
+        <li id="cite-17">
+          <span class="src-title">魔搭社区 ModelScope, 魔搭平台免费资源list. 每日2000次免费API调用，覆盖2万+模型，支持Qwen、DeepSeek、GLM、MiniMax等热门模型.</span>
+          <a class="src-url" href="https://www.modelscope.cn/learn/1409" target="_blank" rel="noopener">https://www.modelscope.cn/learn/1409</a>
         </li>
       </ol>
     </div>
