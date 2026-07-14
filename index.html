@@ -371,10 +371,10 @@
   <header class="hero">
     <span class="badge">RESEARCH REPORT · 2026-07</span>
     <h1>国内免费大模型 API 调研报告</h1>
-    <p class="subtitle">覆盖 16 家国内厂商 + 4 家国际平台，对比免费额度、模型能力、上下文长度、接入方式等核心维度，附选型决策树与避坑指南。</p>
+    <p class="subtitle">覆盖 18 家国内厂商 + 4 家国际平台，对比免费额度、模型能力、上下文长度、接入方式等核心维度，附选型决策树与避坑指南。</p>
     <div class="meta">
-      <span>数据截止：2026-07-13</span>
-      <span>平台数：21</span>
+      <span>数据截止：2026-07-14</span>
+      <span>平台数：23</span>
       <span>来源：官方定价页 + 行业汇总</span>
     </div>
   </header>
@@ -384,12 +384,12 @@
     <!-- 执行摘要 -->
     <section id="summary">
       <h2>执行摘要</h2>
-      <p>2025 年下半年以来，国内大模型厂商开启了"免费额度军备竞赛"。DeepSeek V4 以价格战撕开口子，智谱用<strong>永久免费模型</strong>建起护城河，阿里云百炼靠<strong>多模型聚合</strong>吸引开发者，商汤则以<strong>公测期完全免费 + 每 5 小时刷新额度</strong>杀入战场。截至 2026 年 7 月，国内已有至少 10 家厂商提供可免费调用的大模型 API<sup><a href="#cite-1">[1]</a></sup>。京东 JoyClaw 于 7 月推出"日送一万积分"限时活动；<strong>魔搭社区（ModelScope）</strong>每日 2000 次免费调用成为开发者新选择<sup><a href="#cite-17">[17]</a></sup>。</p>
+      <p>2025 年下半年以来，国内大模型厂商开启了"免费额度军备竞赛"。DeepSeek V4 以价格战撕开口子，智谱用<strong>永久免费模型</strong>建起护城河，阿里云百炼靠<strong>多模型聚合</strong>吸引开发者，商汤则以<strong>公测期完全免费 + 每 5 小时刷新额度</strong>杀入战场。截至 2026 年 7 月 14 日，国内已有至少 12 家厂商提供可免费调用的大模型 API<sup><a href="#cite-1">[1]</a></sup>。京东 JoyClaw 日送一万积分限时活动持续进行；<strong>魔搭社区（ModelScope）</strong>每日 2000 次免费调用成为开发者新选择<sup><a href="#cite-17">[17]</a></sup>。**MiniMax 取消免费档**改为订阅制（29 元/月起），**腾讯混元 Hy3 正式发布**并赠送 10 亿 Token。**小米 MiMo** 和 **OpenCode Zen** 作为新晋平台加入竞争<sup><a href="#cite-18">[18]</a></sup><sup><a href="#cite-19">[19]</a></sup>。</p>
 
       <div class="summary-grid">
         <div class="summary-card">
-          <div class="num">3</div>
-          <div class="label">永久免费模型（智谱 GLM-4-Flash / GLM-4.7-Flash / GLM-Z1-Flash）</div>
+          <div class="num">7+</div>
+          <div class="label">永久免费模型（智谱 GLM-4-Flash / 4.7-Flash / Z1-Flash / 4V-Flash 等）</div>
         </div>
         <div class="summary-card">
           <div class="num">2000万</div>
@@ -405,25 +405,25 @@
         </div>
         <div class="summary-card">
           <div class="num">10亿</div>
-          <div class="label">腾讯混元 Hy3 微信小程序活动赠送 Token + 10 万张 AI 生图</div>
+          <div class="label">腾讯混元 Hy3 微信小程序活动赠送 Token（7 月升级）+ 10 万张 AI 生图</div>
         </div>
       </div>
 
       <div class="callout">
-        <p><strong>四句话结论：</strong></p>
-        <p>1. <strong>国内项目首选智谱 AI</strong> — GLM-4-Flash 永久免费，新用户还有 2000 万 Token，OpenAI 兼容格式接入简单<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-2">[2]</a></sup>。</p>
-        <p>2. <strong>追求极致性价比看 DeepSeek</strong> — V4-Flash 输入低至 $0.14/百万 Token，新用户送 500 万 Token<sup><a href="#cite-3">[3]</a></sup><sup><a href="#cite-14">[14]</a></sup>。</p>
+        <p><strong>六句话结论：</strong></p>
+        <p>1. <strong>国内项目首选智谱 AI</strong> — 7+ 款永久免费模型，新用户还有 2000 万 Token，OpenAI 兼容格式接入简单<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-2">[2]</a></sup>。</p>
+        <p>2. <strong>追求极致性价比看 DeepSeek</strong> — V4-Flash 输入低至 $0.14/百万 Token，新用户送 500 万 Token，注意 7/15 起峰谷计费（高峰翻倍）<sup><a href="#cite-3">[3]</a></sup><sup><a href="#cite-14">[14]</a></sup>。</p>
         <p>3. <strong>需要多模型对比选阿里云百炼</strong> — 每个模型 100 万 Token、3 个月有效，覆盖通义千问、DeepSeek、Kimi 等全系<sup><a href="#cite-1">[1]</a></sup>。</p>
         <p>4. <strong>办公场景 + 白嫖 DeepSeek 选商汤</strong> — 公测期完全免费，每 5 小时 1500 次调用，自带 DeepSeek V4 Flash（1M 上下文），无需实名认证<sup><a href="#cite-8">[8]</a></sup>。</p>
-        <p>5. <strong>编程能力优先选 MiniMax</strong> — M2.5 系列 SWE-Bench 80%+，Starter 档 40 次/5 小时免费，OpenAI 兼容<sup><a href="#cite-10">[10]</a></sup>。</p>
-        <p>6. <strong>腾讯混元 Hy3 开源免费商用</strong> — 295B MoE，免费赠送 10 亿 Token + 10 万张生图，开源可商用<sup><a href="#cite-9">[9]</a></sup>。</p>
+        <p>5. <strong>编程能力优先选 MiniMax M3</strong> — 全新 Frontier Coding 模型，1M 上下文，但已取消免费档（Starter 29 元/月）<sup><a href="#cite-10">[10]</a></sup>。</p>
+        <p>6. <strong>腾讯混元 Hy3 开源免费商用</strong> — 295B MoE，微信小程序活动升级至 10 亿 Token + 10 万张生图，开源可商用<sup><a href="#cite-9">[9]</a></sup>。</p>
       </div>
     </section>
 
     <!-- 核心对比表 -->
     <section id="comparison-table">
       <h2>国内平台免费额度横向对比</h2>
-      <p>下表汇总了 16 家国内厂商的核心免费政策，数据截至 2026 年 7 月 13 日。<span style="color:var(--muted);font-size:0.85rem;">标注 [P0] 表示来自官方定价页/文档，[P2] 表示来自行业汇总文章。</span></p>
+      <p>下表汇总了 18 家国内厂商的核心免费政策，数据截至 2026 年 7 月 14 日。<span style="color:var(--muted);font-size:0.85rem;">标注 [P0] 表示来自官方定价页/文档，[P2] 表示来自行业汇总文章。</span></p>
 
       <div class="table-wrap">
         <table>
@@ -459,9 +459,9 @@
             </tr>
             <tr>
               <td><strong>硅基流动</strong></td>
-              <td>新用户 2000 万 Token；部分小模型永久免费（列表动态调整）</td>
+              <td>新用户 2000 万 Token；部分模型永久免费（Qwen3.5-4B 已结束免费）<sup><a href="#cite-5">[5]</a></sup></td>
               <td><span class="tag tag-free">永久</span> + <span class="tag tag-limited">赠送额度</span></td>
-              <td>GLM-Z1-9B, Qwen3.5-4B, Kolors 等</td>
+              <td>GLM-Z1-9B, PaddleOCR-VL-1.5, Kolors 等</td>
               <td>依模型</td>
               <td>OpenAI 兼容</td>
               <td>★★★★</td>
@@ -486,7 +486,7 @@
             </tr>
             <tr>
               <td><strong>火山引擎</strong></td>
-              <td>DoubaoLite 永久免费 + 协作奖励企业 500 万/天、个人 200 万/天 + 体验模式 50 万/模型</td>
+              <td>DoubaoLite 永久免费（Lite 系列，50 万 Token 一次性） + 协作奖励每模型 500 万 Token/天 + 体验模式 50 万/模型</td>
               <td><span class="tag tag-free">每日重置</span></td>
               <td>Doubao-lite-32k</td>
               <td>32K</td>
@@ -522,7 +522,7 @@
             </tr>
             <tr>
               <td><strong>科大讯飞星火</strong></td>
-              <td>星火 Lite 永久免费 + 新注册每模型约 20 万 Token</td>
+              <td>星火 Lite 永久免费 + 新注册最多 100 万 Token</td>
               <td><span class="tag tag-free">永久</span> + <span class="tag tag-limited">赠送</span></td>
               <td>星火 Lite, 星火 X2</td>
               <td>128K</td>
@@ -531,10 +531,10 @@
             </tr>
             <tr>
               <td><strong>MiniMax（海螺AI）</strong></td>
-              <td>Starter 档 40 次/5 小时免费；M2.5 限时免费体验</td>
-              <td><span class="tag tag-free">免费档</span></td>
-              <td>MiniMax M2.5（192K）</td>
-              <td>192K</td>
+              <td><span style="color:var(--red);">免费档已取消</span>；Starter 29 元/月（600 次/5h）；Plus 49 元/月（1500 次/5h）</td>
+              <td><span class="tag tag-paid">订阅制</span></td>
+              <td>MiniMax M3（1M）、M2.7</td>
+              <td>1M</td>
               <td>OpenAI 兼容</td>
               <td>★★★★</td>
             </tr>
@@ -592,6 +592,24 @@
               <td>阿里云账号绑定</td>
               <td>★★★★</td>
             </tr>
+            <tr>
+              <td><strong>小米 MiMo</strong></td>
+              <td>新用户 20 元代金券；MiMo-V2.5 Flash 极低价（¥0.7/M 输入）</td>
+              <td><span class="tag tag-limited">代金券</span></td>
+              <td>MiMo-V2.5（309B MoE）</td>
+              <td>依模型</td>
+              <td>OpenAI / Anthropic 兼容</td>
+              <td>★★★</td>
+            </tr>
+            <tr>
+              <td><strong>OpenCode Zen</strong></td>
+              <td>6 款免费模型每日 100 次请求（DeepSeek V4 Flash、腾讯 Hy3 等）</td>
+              <td><span class="tag tag-free">按天刷新</span></td>
+              <td>DeepSeek V4 Flash Free、Hy3 Free 等</td>
+              <td>128K</td>
+              <td>OpenAI 兼容</td>
+              <td>★★★</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -626,8 +644,10 @@
               <li><strong>GLM-4-Flash-250414</strong>：永久免费，128K 上下文</li>
               <li><strong>GLM-4.7-Flash</strong>：永久免费，200K 上下文</li>
               <li><strong>GLM-Z1-Flash</strong>：永久免费，128K，推理模型</li>
-              <li><strong>GLM-5.2 / 5.1 / 5 / 4.7</strong>：新增限时免费，最大 1M 上下文</li>
-              <li>GLM-5-Turbo / 5 / 4.5-Air：<strong>限时免费</strong></li>
+              <li><strong>GLM-4V-Flash</strong>：永久免费，图像理解模型</li>
+              <li><strong>GLM-4.1V-Thinking-Flash</strong>：永久免费，视觉推理模型</li>
+              <li><strong>GLM-5.2 / 5.1 / 5</strong>：通过 Coding Plan 订阅制提供，非直接 API 限时免费</li>
+              <li><strong>Cogview-3-Flash / CogVideoX-Flash</strong>：永久免费，图像/视频生成</li>
             </ul>
           </div>
           <div class="pc-col">
@@ -665,7 +685,7 @@
           <div class="pc-col">
             <h4>特点</h4>
             <ul>
-              <li><strong>7 月中旬起峰谷计费</strong>：高峰时段（9–12 点、14–18 点）价格翻倍</li>
+              <li><strong>7 月 15 日起峰谷计费已生效</strong>：高峰时段（9–12 点、14–18 点）价格翻倍</li>
               <li>支持 Non-think / Think High / Think Max 三档</li>
               <li>同时兼容 OpenAI 和 Anthropic API 格式</li>
               <li>V4-Flash 并发 2500，V4-Pro 并发 500</li>
@@ -685,13 +705,13 @@
         </div>
         <div class="pc-body">
           <div class="pc-col">
-            <h4>免费额度 [P2]</h4>
+            <h4>免费额度 [P0]</h4>
             <ul>
               <li>新用户赠送 2000 万 Token（约 14 元）</li>
-              <li>部分小模型永久免费（列表动态调整）</li>
-              <li>当前免费：GLM-Z1-9B-0414、Qwen3.5-4B、Kolors、BAAI/bge-m3 等</li>
-              <li>新增自研 <strong>Nex-N2-Pro</strong>（Agent/代码方向）限时免费</li>
-              <li>早期 9B 以下模型（如 Qwen2-7B、DeepSeek-R1-Distill-Qwen-7B）已下线</li>
+              <li>当前永久免费模型：GLM-Z1-9B-0414、PaddleOCR-VL-1.5（OCR）、Hunyuan-MT-7B（翻译）</li>
+              <li>图像/语音：Kolors（生图）、TeleSpeechASR、SenseVoiceSmall（语音识别）</li>
+              <li>嵌入/重排：BAAI/bge-m3、bge-reranker-v2-m3、bge-large-zh/en-v1.5</li>
+              <li><strong>Qwen3.5-4B 已结束免费</strong>，Nex-N2-Pro 限时免费已结束（现 ¥1.75/M 输入）</li>
             </ul>
           </div>
           <div class="pc-col">
@@ -816,23 +836,25 @@
       <div class="platform-card">
         <div class="pc-header">
           <span class="pc-name">MiniMax（海螺AI）</span>
-          <span class="pc-rating">★★★★ 编程强者</span>
+          <span class="pc-rating">★★★★ 编程强者（已取消免费档）</span>
         </div>
         <div class="pc-body">
           <div class="pc-col">
-            <h4>免费额度 [P2]</h4>
+            <h4>当前定价 [P2]</h4>
             <ul>
-              <li><strong>Starter 档</strong>：40 次/5 小时，M2.5 系列</li>
-              <li>M2.5 全球首发限时免费体验</li>
-              <li>性价比极高：¥2.1/M 输入、¥8.4/M 输出</li>
+              <li><strong>免费档已取消</strong>（2026 年中改为 Token Plan 订阅制）</li>
+              <li>Starter 版：29 元/月（600 次/5h），仅编程 + 图像理解</li>
+              <li>Plus 版：49 元/月（1500 次/5h），新增图像 + 语音生成</li>
+              <li>Max 档：119 元/月，全模态（文图音视）</li>
+              <li>按量计费：¥2.1/M 输入、¥8.4/M 输出</li>
             </ul>
           </div>
           <div class="pc-col">
             <h4>特点</h4>
             <ul>
-              <li>M2.5 编程能力 SWE-Bench 80%+，全球第一梯队</li>
+              <li><strong>MiniMax M3</strong>：全新 Frontier Coding 模型，1M 上下文</li>
+              <li>M2.7 已上线，含高速版；M2.5 已降级为历史模型</li>
               <li>OpenAI 兼容格式</li>
-              <li>192K 上下文窗口</li>
               <li>同时覆盖文本、语音、图像、视频</li>
             </ul>
           </div>
@@ -841,10 +863,10 @@
       </div>
 
       <h4>火山引擎（豆包）</h4>
-      <p>协作奖励计划：<strong>认证企业每天每模型最高 500 万 Token，个人每天每模型 200 万 Token</strong>（按天重置）。DoubaoLite 永久免费。安心体验模式每模型 50 万 Token。平台已接入千问全系、DeepSeek 全系、Kimi、MiniMax、GLM 等<sup><a href="#cite-1">[1]</a></sup>。适合字节系生态、高并发场景。</p>
+      <p>协作奖励计划已升级为<strong>第二期</strong>：参与即可获得<strong>每天每个模型最高 500 万免费 Token</strong>（不再区分企业/个人，按天重置）。DoubaoLite（Lite 系列 4k/32k）永久免费，配 50 万 Token 一次性免费额度（QPS=10）。安心体验模式每模型 50 万 Token。平台已接入千问全系、DeepSeek 全系、Kimi、MiniMax、GLM 等<sup><a href="#cite-1">[1]</a></sup>。适合字节系生态、高并发场景。</p>
 
       <h4>百度千帆（文心一言）</h4>
-      <p>ERNIE-Speed-8K <strong>永久免费</strong>且 QPS=50。每模型 100 万 Token（ERNIE-4.5 系列 3 个月有效）。现已接入 DeepSeek、通义千问、Kimi 等第三方模型，平台覆盖面大幅扩展<sup><a href="#cite-1">[1]</a></sup>。</p>
+      <p>ERNIE-Speed、ERNIE-Lite、ERNIE-Tiny 系列<strong>共 7 款模型永久免费</strong>（含 8K/128K 两种上下文版本），价格降幅 100%，QPS=50。每模型 100 万 Token（ERNIE-4.5 系列 3 个月有效）。现已接入 DeepSeek、通义千问、Kimi 等第三方模型，平台覆盖面大幅扩展<sup><a href="#cite-1">[1]</a></sup>。</p>
 
       <h4>Kimi（月之暗面）</h4>
       <p>新用户赠送 <strong>15 元代金券</strong>（永久有效），按 K2.6 价格约相当于 230 万 Token 输入量。262K 超长上下文，支持图片和视频理解。最新模型 <strong>Kimi K2.6</strong>（输入 ¥6.50/M、输出 ¥27.00/M）。2026 年 6 月发布 <strong>Kimi K2.7 Code</strong> 编程大模型（1.1 万亿参数，256K 上下文）。<strong>2026 年 7 月 3 日，Kimi K2.7 Code 接入 GitHub Copilot</strong>，成为 Copilot 首个开源模型集成<sup><a href="#cite-1">[1]</a></sup><sup><a href="#cite-10">[10]</a></sup><sup><a href="#cite-16">[16]</a></sup>。</p>
@@ -853,7 +875,7 @@
       <p><strong>混元 Hy3（2026-07-06 发布）</strong>：295B MoE 架构（21B 激活参数），已开源且免费商用。通用资源包 100 万 Token（有效期 1 年），Embedding 额外 100 万 Token。微信"AI 小程序成长计划"赠送 <strong>10 亿 Token + 10 万张 AI 生图</strong>（微信小程序/云开发特定活动，非所有新用户默认额度，7 月 1 日起分批到账，补发之日起 6 个月有效）<sup><a href="#cite-9">[9]</a></sup>。适合腾讯生态、大模型开源部署。</p>
 
       <h4>科大讯飞星火</h4>
-      <p><strong>星火 Lite API 永久免费</strong>；新注册开发者每模型约 <strong>20 万 Token</strong> 免费额度。最新 <strong>星火 X2</strong> 模型已上线 API，推理性能提升 50%<sup><a href="#cite-1">[1]</a></sup>。语音能力突出，适合语音交互场景。</p>
+      <p><strong>星火 Lite API 永久免费</strong>；新注册开发者免费额度已大幅提升至<strong>最多 100 万 Token</strong>（此前为每模型约 20 万 Token）。最新 <strong>星火 X2</strong> 模型已上线 API，推理性能提升 50%<sup><a href="#cite-1">[1]</a></sup>。语音能力突出，适合语音交互场景。</p>
 
       <h4>京东 JoyClaw（龙虾）</h4>
       <p><strong>7 月新出限时活动</strong>：每天自动发放 <strong>10,000 积分</strong>，约可支撑 50–100 次常规问答，当日用完次日再发。支持 GLM-5.2 等标准兼容模型，OpenAI 格式接入。京东账号授权登录即可获取 API 凭证，可在飞书 Bot、n8n、本地 AI 工具等中调用<sup><a href="#cite-11">[11]</a></sup>。适合快速体验、轻量自动化场景。</p>
@@ -869,6 +891,60 @@
 
       <h4>魔搭社区（ModelScope）</h4>
       <p>阿里旗下开源模型社区，绑定阿里云账号后每日可享受 <strong>2000 次免费 API 调用</strong>（单模型上限约 500 次/天），覆盖 2 万+模型，包括 Qwen、DeepSeek、GLM、MiniMax 等热门系列。按天重置额度，适合模型选型对比、轻量体验和开源模型探索<sup><a href="#cite-17">[17]</a></sup>。</p>
+
+      <div class="platform-card">
+        <div class="pc-header">
+          <span class="pc-name">小米 MiMo</span>
+          <span class="pc-rating">★★★ 新晋厂商</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-col">
+            <h4>免费额度 [P2]</h4>
+            <ul>
+              <li>新用户赠送 <strong>20 元代金券</strong></li>
+              <li>MiMo-V2.5 Flash：¥0.7/M 输入（极低价）</li>
+              <li>2026 年 5 月永久降价最高 99%</li>
+            </ul>
+          </div>
+          <div class="pc-col">
+            <h4>特点</h4>
+            <ul>
+              <li>MiMo-V2.5：309B MoE（21B 激活参数）</li>
+              <li>兼容 OpenAI 和 Anthropic 双协议</li>
+              <li>原生全模态（文本/图像/语音/视频）</li>
+              <li>开源可本地部署</li>
+            </ul>
+          </div>
+        </div>
+        <p style="font-size:0.85rem;color:var(--muted);">适用场景：小米生态集成、全模态理解、低成本调用。注册地址：mimo.mi.com</p>
+      </div>
+
+      <div class="platform-card">
+        <div class="pc-header">
+          <span class="pc-name">OpenCode Zen</span>
+          <span class="pc-rating">★★★ 免费聚合</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-col">
+            <h4>免费额度 [P2]</h4>
+            <ul>
+              <li><strong>6 款免费模型</strong>，每日 100 次请求，128K 上下文</li>
+              <li>当前免费：DeepSeek V4 Flash Free、腾讯 Hy3 Free、Nemotron 3 Ultra Free、MiMo-V2.5 Free、North Mini Code Free、Big Pickle</li>
+              <li>免费模型阵容定期轮换</li>
+            </ul>
+          </div>
+          <div class="pc-col">
+            <h4>特点</h4>
+            <ul>
+              <li>聚合多厂商模型的免费层</li>
+              <li>OpenAI 兼容格式</li>
+              <li>无需注册多平台，一个 Key 调多模型</li>
+              <li>适合轻量开发测试</li>
+            </ul>
+          </div>
+        </div>
+        <p style="font-size:0.85rem;color:var(--muted);">适用场景：多模型免费层聚合、轻量开发测试。注册地址：opencode.ai/zen</p>
+      </div>
     </section>
 
     <!-- 国际平台补充 -->
@@ -961,13 +1037,13 @@
       <p>大多数平台的免费额度都有<strong>速率限制</strong>（RPM/QPS），不是想调就调。遇到 429 错误是正常的限流保护。建议实现指数退避重试机制。</p>
 
       <h3>坑 2：免费额度随时可能变</h3>
-      <p>各平台的免费政策调整频繁，DeepSeek 在 2026 年 5 月将 V4-Pro 的 75% 促销折扣变为永久价格<sup><a href="#cite-4">[4]</a></sup>。智谱在 2026 年中新增 GLM-4.7-FlashX（200K 限时免费），Kimi 从 K2.5 升级到 K2.6（262K），腾讯发布混元 Hy3 并开源免费商用。建议定期查看官网公告，<strong>不要把免费额度作为生产环境的唯一依赖</strong>。</p>
+      <p>各平台的免费政策调整频繁，DeepSeek 在 2026 年 5 月将 V4-Pro 的 75% 促销折扣变为永久价格<sup><a href="#cite-4">[4]</a></sup>。智谱在 2026 年中新增 GLM-4.1V-Thinking-Flash 等永久免费视觉模型。Kimi 从 K2.5 升级到 K2.6（262K），腾讯发布混元 Hy3 并开源免费商用。**MiniMax 已于 2026 年中取消免费档**，改为 29 元/月起订阅制。**硅基流动 Qwen3.5-4B 和 Nex-N2-Pro 免费已取消**。建议定期查看官网公告，<strong>不要把免费额度作为生产环境的唯一依赖</strong>。</p>
 
       <h3>坑 3：永久免费 vs 限时免费</h3>
       <p>智谱 GLM-4-Flash / GLM-4.7-Flash / GLM-Z1-Flash 是<strong>确认永久免费</strong>的（官方定价页标注"免费"）<sup><a href="#cite-2">[2]</a></sup>。而 GLM-5.2 / 5.1 / 5-Turbo 等旗舰模型标注为"限时免费"，随时可能恢复收费。</p>
 
       <h3>坑 4：峰谷计费</h3>
-      <p>DeepSeek V4 <strong>2026 年 7 月 15 日</strong>正式版全量上线，同步实行峰谷计费：高峰时段（北京 09:00–12:00、14:00–18:00）所有调用价格翻倍，低谷时段维持原价，夜间谷段成本最高可降 60%<sup><a href="#cite-4">[4]</a></sup>。建议错峰调用以降低成本。新用户注册仍赠送 500 万 Token（一次性，用完恢复付费）[P2]。</p>
+      <p>DeepSeek V4 <strong>2026 年 7 月 15 日</strong>正式版全量上线，同步实行峰谷计费：高峰时段（北京 09:00–12:00、14:00–18:00）所有调用价格翻倍，低谷时段维持原价，夜间谷段成本最高可降 60%<sup><a href="#cite-4">[4]</a></sup>。`deepseek-chat` 和 `deepseek-reasoner` 将于 7 月 24 日弃用。建议错峰调用以降低成本。新用户注册仍赠送 500 万 Token（一次性，用完恢复付费）[P2]。</p>
 
       <h3>坑 5：实名认证要求</h3>
       <p>国内平台普遍需要实名认证才能获取完整免费额度。例如智谱注册后赠送 100 万 Token，实名认证后额外赠送 400 万<sup><a href="#cite-6">[6]</a></sup>。但<strong>商汤 SenseNova 是例外</strong>，公测期手机号注册即可使用，无需实名认证<sup><a href="#cite-8">[8]</a></sup>。</p>
@@ -1073,7 +1149,7 @@
     </section>
 
     <div class="disclaimer">
-      <strong>免责声明：</strong>本报告数据截至 2026 年 7 月 13 日，大模型 API 免费政策和定价调整频繁，使用前请务必访问各平台官网确认最新政策。标注 [P0] 的数据来自官方定价页，标注 [P2] 的数据来自行业汇总文章，可能存在滞后。本报告不构成任何投资或采购建议。
+      <strong>免责声明：</strong>本报告数据截至 2026 年 7 月 14 日，大模型 API 免费政策和定价调整频繁，使用前请务必访问各平台官网确认最新政策。标注 [P0] 的数据来自官方定价页，标注 [P2] 的数据来自行业汇总文章，可能存在滞后。本报告不构成任何投资或采购建议。
     </div>
 
   </main>
@@ -1149,6 +1225,14 @@
         <li id="cite-17">
           <span class="src-title">魔搭社区 ModelScope, 魔搭平台免费资源list. 每日2000次免费API调用，覆盖2万+模型，支持Qwen、DeepSeek、GLM、MiniMax等热门模型.</span>
           <a class="src-url" href="https://www.modelscope.cn/learn/1409" target="_blank" rel="noopener">https://www.modelscope.cn/learn/1409</a>
+        </li>
+        <li id="cite-18">
+          <span class="src-title">经管之家, 全平台AI模型API全面调研报告（2026年7月版）. 小米MiMo平台开放API，新用户20元代金券，MiMo-V2.5 309B MoE架构.</span>
+          <a class="src-url" href="https://bbs.pinggu.org/thread-16659782-1-1.html" target="_blank" rel="noopener">https://bbs.pinggu.org/thread-16659782-1-1.html</a>
+        </li>
+        <li id="cite-19">
+          <span class="src-title">头条, OpenCode Zen免费模型大换血！腾讯Hy3空降. OpenCode Zen聚合6款免费模型，每日100次请求，128K上下文，模型阵容定期轮换.</span>
+          <a class="src-url" href="http://m.toutiao.com/group/7661113792922665512/" target="_blank" rel="noopener">http://m.toutiao.com/group/7661113792922665512/</a>
         </li>
       </ol>
     </div>
