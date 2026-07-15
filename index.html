@@ -184,11 +184,16 @@
 
     /* Hero */
     .hero {
-      padding: 3.5rem 3rem 2.5rem;
+      padding: 3.5rem 0 2.5rem;
       border-bottom: 1px solid var(--rule);
       background:
         radial-gradient(ellipse at top right, rgba(91, 138, 245, 0.08), transparent 60%),
         radial-gradient(ellipse at bottom left, rgba(62, 207, 178, 0.05), transparent 50%);
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 3rem;
     }
     .hero-badge {
       display: inline-flex;
@@ -250,6 +255,7 @@
     .content {
       padding: 0 3rem;
       max-width: 1100px;
+      margin: 0 auto;
     }
 
     /* ── Section styling ──────────────────────────── */
@@ -910,17 +916,19 @@
 
   <!-- Hero -->
   <header class="hero" id="top">
-    <span class="hero-badge">
-      <span class="pulse"></span>
-      LIVE REPORT · 每日更新 · 2026.07
-    </span>
-    <h1>国内<span class="accent">免费大模型</span> API<br>调研报告</h1>
-    <p class="subtitle">覆盖 18 家国内厂商 + 4 家国际平台，对比免费额度、模型能力、上下文长度与接入方式。先读 TL;DR，再按需深挖。</p>
-    <div class="hero-meta">
-      <span class="meta-item"><strong>数据截止</strong> 2026-07-15</span>
-      <span class="meta-item"><strong>国内平台</strong> 18 家</span>
-      <span class="meta-item"><strong>国际平台</strong> 4 家</span>
-      <span class="meta-item"><strong>永久免费模型</strong> 7+</span>
+    <div class="hero-inner">
+      <span class="hero-badge">
+        <span class="pulse"></span>
+        LIVE REPORT · 每日更新 · 2026.07
+      </span>
+      <h1>国内<span class="accent">免费大模型</span> API<br>调研报告</h1>
+      <p class="subtitle">覆盖 18 家国内厂商 + 4 家国际平台，对比免费额度、模型能力、上下文长度与接入方式。先读 TL;DR，再按需深挖。</p>
+      <div class="hero-meta">
+        <span class="meta-item"><strong>数据截止</strong> 2026-07-15</span>
+        <span class="meta-item"><strong>国内平台</strong> 18 家</span>
+        <span class="meta-item"><strong>国际平台</strong> 4 家</span>
+        <span class="meta-item"><strong>永久免费模型</strong> 7+</span>
+      </div>
     </div>
   </header>
 
