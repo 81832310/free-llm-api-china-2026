@@ -1,0 +1,336 @@
+From 8d8407418d4a5b1d0707755863d640ea0bf36959 Mon Sep 17 00:00:00 2001
+From: TRAE AI Agent <ai-agent@trae.local>
+Date: Tue, 21 Jul 2026 05:12:56 +0000
+Subject: [PATCH] update: 2026-07-21
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- DeepSeek V4 GA 7/20 上线，更新峰谷计费细节
+- Kimi K3 7/16 正式发布（2.8T MoE，1M 上下文）
+- 阿里 Qwen3.8-Max-Preview 7/19 官宣
+- 商汤 SenseNova 国际版 7/17 上线
+- 硅基流动上线高速版 GLM-5.2/Kimi K2.7 Code/DeepSeek V4
+- Kimi 7/19 暂停 C 端新用户订阅
+- 数据截止更新至 2026-07-21
+- 新增引用 [22]-[28]
+---
+ index.html | 138 ++++++++++++++++++++++++++++++++++++++++-------------
+ 1 file changed, 104 insertions(+), 34 deletions(-)
+
+diff --git a/index.html b/index.html
+index 3dad45b..33d045b 100644
+--- a/index.html
++++ b/index.html
+@@ -904,7 +904,7 @@
+ 
+   <div class="sidebar-section-label" style="margin-top:2rem;">数据概况</div>
+   <div style="padding:0 0.5rem;font-family:var(--font-mono);font-size:0.7rem;color:var(--muted);line-height:1.8;">
+-    数据截止 · 2026-07-17<br>
++    数据截止 · 2026-07-21<br>
+     国内平台 · 20 家<br>
+     国际平台 · 4 家<br>
+     永久免费模型 · 7+
+@@ -924,7 +924,7 @@
+       <h1>国内<span class="accent">免费大模型</span> API<br>调研报告</h1>
+       <p class="subtitle">覆盖 20 家国内厂商 + 4 家国际平台，对比免费额度、模型能力、上下文长度与接入方式。先读 TL;DR，再按需深挖。</p>
+       <div class="hero-meta">
+-        <span class="meta-item"><strong>数据截止</strong> 2026-07-17</span>
++        <span class="meta-item"><strong>数据截止</strong> 2026-07-21</span>
+         <span class="meta-item"><strong>国内平台</strong> 20 家</span>
+         <span class="meta-item"><strong>国际平台</strong> 4 家</span>
+         <span class="meta-item"><strong>永久免费模型</strong> 7+</span>
+@@ -951,7 +951,7 @@
+         <div class="conc-card highlight">
+           <div class="conc-rank">性价比</div>
+           <div class="conc-title">💰 DeepSeek</div>
+-          <div class="conc-body">V4-Flash 输入 $0.14/M。注意 7/15 起峰谷计费（高峰翻倍），新用户送 500 万 Token。</div>
++          <div class="conc-body">V4 正式版 7/20 GA 上线，引入峰谷计费（高峰 9–12/14–18 点翻倍）。Flash 输出平时 2 元/M，新用户送 500 万 Token。</div>
+         </div>
+         <div class="conc-card highlight">
+           <div class="conc-rank">多模型</div>
+@@ -961,7 +961,7 @@
+         <div class="conc-card">
+           <div class="conc-rank">白嫖</div>
+           <div class="conc-title">🎯 商汤 SenseNova</div>
+-          <div class="conc-body">公测期完全免费，每 5h 刷新 1500 次，自带 DeepSeek V4 Flash，无需实名。</div>
++          <div class="conc-body">公测期完全免费，每 5h 刷新 1500 次，自带 DeepSeek V4 Flash。7/17 推出国际版，首月免费。</div>
+         </div>
+         <div class="conc-card">
+           <div class="conc-rank">编程</div>
+@@ -993,14 +993,44 @@
+       </div>
+ 
+       <div class="updates">
++        <div class="update-item hot">
++          <div class="update-date">2026-07-21</div>
++          <div class="update-title">报告数据更新</div>
++          <div class="update-desc">本周国内大模型密集出牌：DeepSeek V4 GA、Kimi K3、Qwen3.8-Max-Preview 三连发。商汤 SenseNova 推出国际版 Token Plan。硅基流动上线高速版 GLM-5.2 / Kimi K2.7 Code / DeepSeek V4-Pro&Flash。</div>
++        </div>
++        <div class="update-item hot">
++          <div class="update-date">2026-07-20</div>
++          <div class="update-title">DeepSeek V4 正式版 GA 上线</div>
++          <div class="update-desc">峰谷计费正式生效：V4-Pro 输出平时 6 元/M（约 $0.87），高峰 12 元/M（约 $1.74）；V4-Flash 输出平时 2 元/M，高峰 4 元/M。缓存命中输入低至 0.025 元/M。性能接近 Opus 4.8，编码追近 GPT-5.6 Sol。7/24 旧模型名停用。</div>
++        </div>
++        <div class="update-item hot">
++          <div class="update-date">2026-07-19</div>
++          <div class="update-title">阿里 Qwen3.8-Max-Preview 深夜官宣</div>
++          <div class="update-desc">2.4 万亿参数 MoE，首个突破 1 万亿的多模态模型，1M 上下文。百炼同步推出 Token Plan：Lite 39 元/月、Standard 139 元/月、Pro 499 元/月。限时优惠白天 1 折、夜间 0.2 折。即将开源（Apache 2.0）。</div>
++        </div>
++        <div class="update-item broken">
++          <div class="update-date">2026-07-19</div>
++          <div class="update-title">Kimi 暂停 C 端新用户订阅</div>
++          <div class="update-desc">K3 上线 48 小时算力告急，新用户会员套餐显示"已售罄"。已有订阅用户权益不受影响。后续将拆分 Kimi 主权益与 Kimi Code 权益精准匹配算力。</div>
++        </div>
++        <div class="update-item hot">
++          <div class="update-date">2026-07-17</div>
++          <div class="update-title">商汤 SenseNova 国际版上线</div>
++          <div class="update-desc">面向香港及全球市场推出国际版 Token Plan（sensenova.ai），新用户首月限时免费试用，每模型每 5h 1500 次免费 API 调用。涵盖 6.7 Flash-Lite、U1 Fast、DeepSeek V4 Flash。</div>
++        </div>
++        <div class="update-item hot">
++          <div class="update-date">2026-07-16</div>
++          <div class="update-title">Kimi K3 正式发布</div>
++          <div class="update-desc">2.8 万亿 MoE 参数（全球最大开源模型），896 专家激活 16 个，原生 100 万 token 上下文。Frontend Code Arena 1679 分登顶全球第一。API 定价：输入命中 2 元/M、未命中 20 元/M、输出 100 元/M（约 $3/$15）。完整权重 7/27 开源。</div>
++        </div>
+         <div class="update-item hot">
+           <div class="update-date">2026-07-17</div>
+           <div class="update-title">阶跃星辰 Step Plan 限时免费</div>
+           <div class="update-desc">新用户 15 天免费体验（4 亿 Credits，含 Step 3.7 Flash），可续 15 天，邀好友最高 90 天，活动至 7/31。</div>
+         </div>
+-        <div class="update-item hot">
++        <div class="update-item">
+           <div class="update-date">2026-07-15</div>
+-          <div class="update-title">DeepSeek V4 峰谷计费生效</div>
++          <div class="update-title">DeepSeek V4 峰谷计费规则公布</div>
+           <div class="update-desc">高峰时段（9–12点、14–18点）价格翻倍。deepseek-chat/reasoner 将于 7/24 弃用。</div>
+         </div>
+         <div class="update-item hot">
+@@ -1016,7 +1046,7 @@
+         <div class="update-item">
+           <div class="update-date">2026-07-03</div>
+           <div class="update-title">Kimi K2.7 Code 接入 Copilot</div>
+-          <div class="update-desc">成为 GitHub Copilot 首个开源模型集成。K3 已在 beta 软上线。</div>
++          <div class="update-desc">成为 GitHub Copilot 首个开源模型集成。</div>
+         </div>
+         <div class="update-item broken">
+           <div class="update-date">2026 年中</div>
+@@ -1061,11 +1091,12 @@
+             <span class="pc-rating">★★★★</span>
+           </div>
+           <div class="pc-row"><span class="label">新用户</span><span class="value">注册赠送 <strong>500 万 Token</strong>（平台活动）</span></div>
+-          <div class="pc-row"><span class="label">V4-Flash</span><span class="value">输入 <strong>$0.14/M</strong>，输出 $0.28/M · 1M 上下文</span></div>
+-          <div class="pc-row"><span class="label">V4-Pro</span><span class="value">输入 $0.435/M，输出 $0.87/M · 1M 上下文</span></div>
+-          <div class="pc-row"><span class="label">峰谷计费</span><span class="value"><span class="tag tag-limited">7/15 生效</span> 高峰（9–12点、14–18点）价格翻倍，低谷维持原价</span></div>
+-          <div class="pc-row"><span class="label">弃用提醒</span><span class="value"><span class="tag tag-paid">7/24 弃用</span> deepseek-chat / deepseek-reasoner 映射至 V4-Flash</span></div>
+-          <div class="pc-row"><span class="label">适用</span><span class="value">极致性价比 · 长文本 · 代码生成</span></div>
++          <div class="pc-row"><span class="label">V4 正式版</span><span class="value"><span class="tag tag-limited">7/20 GA</span> 1M 上下文 · SWE-Bench 80.6% 接近 Opus 4.6 · 编码能力追近 GPT-5.6 Sol</span></div>
++          <div class="pc-row"><span class="label">V4-Flash</span><span class="value">输出 <strong>2 元/M</strong>（平时）· 4 元/M（高峰）· 输入 1 元/M（缓存未命中）· 0.02 元/M（缓存命中）</span></div>
++          <div class="pc-row"><span class="label">V4-Pro</span><span class="value">输出 <strong>6 元/M</strong>（平时，约 $0.87）· 12 元/M（高峰，约 $1.74）· 输入 3 元/M（缓存未命中）· 0.025 元/M（缓存命中）</span></div>
++          <div class="pc-row"><span class="label">峰谷计费</span><span class="value"><span class="tag tag-limited">7/20 生效</span> 高峰（9–12点、14–18点）价格翻倍，低谷维持原价，缓存命中输入近乎免费</span></div>
++          <div class="pc-row"><span class="label">弃用提醒</span><span class="value"><span class="tag tag-paid">7/24 弃用</span> deepseek-chat / deepseek-reasoner 映射至 V4-Flash（思考/非思考模式）</span></div>
++          <div class="pc-row"><span class="label">适用</span><span class="value">极致性价比 · 长文本 · 代码生成 · Agent 工作流</span></div>
+         </div>
+ 
+         <!-- 硅基流动 -->
+@@ -1077,6 +1108,7 @@
+           <div class="pc-row"><span class="label">新用户</span><span class="value">赠送 <strong>2000 万 Token</strong>（约 14 元）</span></div>
+           <div class="pc-row"><span class="label">永久免费</span><span class="value">GLM-Z1-9B-0414 · PaddleOCR-VL-1.5 · Hunyuan-MT-7B · Kolors · TeleSpeechASR 等</span></div>
+           <div class="pc-row"><span class="label">已取消</span><span class="value"><span class="tag tag-paid">已结束</span> Qwen3.5-4B · Nex-N2-Pro 限时免费</span></div>
++          <div class="pc-row"><span class="label">高速版</span><span class="value"><span class="tag tag-limited">7 月新上</span> GLM-5.2 · Kimi K2.7 Code · DeepSeek-V4-Pro & Flash（高速推理版）</span></div>
+           <div class="pc-row"><span class="label">特点</span><span class="value">100+ 模型聚合 · 国内服务器 &lt;100ms · 微信/支付宝充值</span></div>
+           <div class="pc-row"><span class="label">适用</span><span class="value">国内高频调用 · 多模型对比 · 价格敏感</span></div>
+         </div>
+@@ -1089,8 +1121,9 @@
+           </div>
+           <div class="pc-row"><span class="label">每模型</span><span class="value"><strong>100 万 Token</strong>，有效期 3 个月</span></div>
+           <div class="pc-row"><span class="label">持续免费</span><span class="value">Qwen Turbo 每月 100 万 Token · Qwen2.5-7B 永久免费</span></div>
+-          <div class="pc-row"><span class="label">覆盖范围</span><span class="value">通义千问全系 · DeepSeek · Kimi · MiniMax 等</span></div>
+-          <div class="pc-row"><span class="label">特点</span><span class="value">模型种类最全的聚合平台 · 每个模型独立额度</span></div>
++          <div class="pc-row"><span class="label">覆盖范围</span><span class="value">通义千问全系（含 <strong>Qwen3.8-Max-Preview</strong>）· DeepSeek · Kimi · MiniMax · GLM 等</span></div>
++          <div class="pc-row"><span class="label">Token Plan</span><span class="value"><span class="tag tag-limited">7/19 上线</span> Lite 39 元/月 · Standard 139 元/月 · Pro 499 元/月 · 限时白天 1 折、夜间 0.2 折</span></div>
++          <div class="pc-row"><span class="label">特点</span><span class="value">模型种类最全的聚合平台 · 每个模型独立额度 · OpenAI / Anthropic 双兼容</span></div>
+           <div class="pc-row"><span class="label">适用</span><span class="value">多模型对比评测 · 企业级应用 · 阿里云生态</span></div>
+         </div>
+ 
+@@ -1100,11 +1133,12 @@
+             <span class="pc-name">商汤 SenseNova</span>
+             <span class="pc-rating">★★★★</span>
+           </div>
+-          <div class="pc-row"><span class="label">Flash-Lite</span><span class="value"><strong>1500 次/5h</strong>，256K 上下文</span></div>
++          <div class="pc-row"><span class="label">Flash-Lite</span><span class="value"><strong>1500 次/5h</strong>，256K 上下文（多模态 Agent 模型）</span></div>
+           <div class="pc-row"><span class="label">U1 Fast</span><span class="value"><strong>1500 次/5h</strong>，信息图生成</span></div>
+-          <div class="pc-row"><span class="label">DeepSeek V4</span><span class="value"><strong>500 次/5h</strong>，1M 上下文</span></div>
++          <div class="pc-row"><span class="label">DeepSeek V4</span><span class="value"><strong>500 次/5h</strong>，1M 上下文（思考/非思考模式）</span></div>
+           <div class="pc-row"><span class="label">接入方式</span><span class="value">OpenAI / Anthropic 双兼容 · Base URL: <code style="font-family:var(--font-mono);font-size:0.75rem;">token.sensenova.cn/v1</code></span></div>
+-          <div class="pc-row"><span class="label">特点</span><span class="value"><span class="tag tag-free">无需实名认证</span> 手机号注册即可 · 办公 Agent 特化 · 可接入 Cursor/TRAE/Cline</span></div>
++          <div class="pc-row"><span class="label">国际版</span><span class="value"><span class="tag tag-limited">7/17 上线</span> sensenova.ai 面向香港及全球市场，新用户首月限时免费试用</span></div>
++          <div class="pc-row"><span class="label">特点</span><span class="value"><span class="tag tag-free">无需实名认证</span> 手机号注册即可 · 办公 Agent 特化 · 可接入 Cursor/TRAE/Cline/OpenClaw</span></div>
+           <div class="pc-row"><span class="label">适用</span><span class="value">办公自动化 · 多模态理解 · 白嫖 DeepSeek V4</span></div>
+         </div>
+ 
+@@ -1177,11 +1211,11 @@
+         <div class="compact-item">
+           <div>
+             <div class="ci-name">Kimi（月之暗面）</div>
+-            <div class="ci-desc">新用户 15 元代金券（永久有效）。Kimi K2.6 支持 262K 上下文。<strong>K3 已 beta 软上线</strong>（2.5 万亿参数 MoE，1M 上下文），限时活动 7/15–8/11。</div>
++            <div class="ci-desc">新用户 15 元代金券（永久有效）。<strong>Kimi K3 已于 7/16 正式发布</strong>：2.8 万亿 MoE 参数（全球最大开源模型），896 专家激活 16 个，原生 100 万 token 上下文。Frontend Code Arena 1679 分登顶全球第一。API 定价：输入命中 2 元/M、未命中 20 元/M、输出 100 元/M（约 $3/$15）。完整权重 7/27 开源。因算力紧缺 7/19 起暂停 C 端新用户订阅。<sup><a href="#cite-23">[23]</a></sup><sup><a href="#cite-24">[24]</a></sup></div>
+           </div>
+           <div class="ci-meta">
+             <span class="tag tag-limited">代金券</span>
+-            <span class="pc-rating" style="font-size:0.7rem;">★★★</span>
++            <span class="pc-rating" style="font-size:0.7rem;">★★★★</span>
+           </div>
+         </div>
+ 
+@@ -1296,7 +1330,7 @@
+             </tr>
+             <tr>
+               <td><span class="platform-name">商汤 SenseNova</span></td>
+-              <td>公测期完全免费；1500 次/5h（Flash-Lite/U1）+ 500 次（DeepSeek V4）</td>
++              <td>公测期完全免费；1500 次/5h（Flash-Lite/U1）+ 500 次（DeepSeek V4）；7/17 推出国际版</td>
+               <td><span class="tag tag-free">公测期</span></td>
+               <td>256K–1M</td>
+               <td>OpenAI / Anthropic</td>
+@@ -1312,7 +1346,7 @@
+             </tr>
+             <tr>
+               <td><span class="platform-name">DeepSeek</span></td>
+-              <td>新用户 500 万 Token；V4-Flash $0.14/M 输入</td>
++              <td>新用户 500 万 Token；V4 GA 7/20 上线，Flash 输出 2 元/M（平时）</td>
+               <td><span class="tag tag-paid">按量计费</span></td>
+               <td>1M</td>
+               <td>OpenAI / Anthropic</td>
+@@ -1344,11 +1378,11 @@
+             </tr>
+             <tr>
+               <td><span class="platform-name">Kimi（月之暗面）</span></td>
+-              <td>新用户 15 元代金券（永久有效）</td>
++              <td>新用户 15 元代金券（永久有效）；K3 7/16 GA，2.8T MoE</td>
+               <td><span class="tag tag-limited">代金券</span></td>
+-              <td>262K</td>
++              <td>1M（K3）</td>
+               <td>OpenAI 兼容</td>
+-              <td>★★★</td>
++              <td>★★★★</td>
+             </tr>
+             <tr>
+               <td><span class="platform-name">腾讯云混元</span></td>
+@@ -1500,7 +1534,8 @@
+         </div>
+         <div class="dt-choices">
+           <span class="dt-choice"><span class="platform">DeepSeek V4 / GLM-5.2</span><span class="arrow">←</span><span class="why">1M 上下文</span></span>
+-          <span class="dt-choice"><span class="platform">Kimi K2.6</span><span class="arrow">←</span><span class="why">256K 上下文</span></span>
++          <span class="dt-choice"><span class="platform">Kimi K3</span><span class="arrow">←</span><span class="why">1M 上下文 · 全球最大开源模型</span></span>
++          <span class="dt-choice"><span class="platform">Qwen3.8-Max-Preview</span><span class="arrow">←</span><span class="why">1M 上下文 · 多模态</span></span>
+         </div>
+ 
+         <div class="dt-scenario">
+@@ -1547,7 +1582,7 @@
+         <div class="pitfall-card">
+           <span class="pf-num">坑 04</span>
+           <h3>峰谷计费</h3>
+-          <p>DeepSeek V4 2026-07-15 正式实行峰谷计费：高峰（9–12点、14–18点）价格翻倍，低谷维持原价，夜间谷段成本最高可降 60%。建议错峰调用。deepseek-chat/reasoner 将于 7/24 弃用。</p>
++          <p>DeepSeek V4 正式版 2026-07-20 GA 上线并实行峰谷计费：高峰（9–12点、14–18点）价格翻倍，低谷维持原价，缓存命中输入低至 0.025 元/M（V4-Pro）近乎免费。建议错峰调用 + 启用上下文缓存。deepseek-chat/reasoner 将于 7/24 弃用。</p>
+         </div>
+ 
+         <div class="pitfall-card">
+@@ -1595,16 +1630,30 @@
+           </thead>
+           <tbody>
+             <tr>
+-              <td>DeepSeek V4-Flash</td>
+-              <td>$0.14（¥1）</td>
+-              <td>$0.28（¥2）</td>
++              <td>DeepSeek V4-Flash（平时）</td>
++              <td>¥1（缓存未命中）· ¥0.02（命中）</td>
++              <td>¥2（约 $0.28）</td>
++              <td>1M</td>
++              <td>[P0]</td>
++            </tr>
++            <tr>
++              <td>DeepSeek V4-Flash（高峰）</td>
++              <td>¥2（缓存未命中）· ¥0.04（命中）</td>
++              <td>¥4（约 $0.56）</td>
++              <td>1M</td>
++              <td>[P0]</td>
++            </tr>
++            <tr>
++              <td>DeepSeek V4-Pro（平时）</td>
++              <td>¥3（缓存未命中）· ¥0.025（命中）</td>
++              <td>¥6（约 $0.87）</td>
+               <td>1M</td>
+               <td>[P0]</td>
+             </tr>
+             <tr>
+-              <td>DeepSeek V4-Pro</td>
+-              <td>$0.435（¥12）</td>
+-              <td>$0.87（¥24）</td>
++              <td>DeepSeek V4-Pro（高峰）</td>
++              <td>¥6（缓存未命中）· ¥0.05（命中）</td>
++              <td>¥12（约 $1.74）</td>
+               <td>1M</td>
+               <td>[P0]</td>
+             </tr>
+@@ -1629,6 +1678,13 @@
+               <td>128K</td>
+               <td>[P0]</td>
+             </tr>
++            <tr>
++              <td>Kimi K3</td>
++              <td>¥20（缓存未命中）· ¥2（命中，约 $3）</td>
++              <td>¥100（约 $15）</td>
++              <td>1M</td>
++              <td>[P0]</td>
++            </tr>
+             <tr>
+               <td>Kimi K2.6</td>
+               <td>¥6.5</td>
+@@ -1636,6 +1692,13 @@
+               <td>262K</td>
+               <td>[P0]</td>
+             </tr>
++            <tr>
++              <td>阿里 Qwen3.8-Max-Preview</td>
++              <td>Token Plan 限时 1 折/0.2 折</td>
++              <td>同上</td>
++              <td>1M</td>
++              <td>[P0]</td>
++            </tr>
+             <tr>
+               <td>MiniMax M2.5</td>
+               <td>¥2.1</td>
+@@ -1660,7 +1723,7 @@
+           </tbody>
+         </table>
+       </div>
+-      <p style="font-size:0.78rem;color:var(--muted);margin-top:0.8rem;">DeepSeek 美元价格按官方计费，人民币价格为硅基流动平台价格（可能有加价）。智谱限时免费模型恢复收费后按表列价格计费。</p>
++      <p style="font-size:0.78rem;color:var(--muted);margin-top:0.8rem;">DeepSeek V4 7/20 GA 上线引入峰谷计费：高峰时段（9–12点、14–18点）价格翻倍，缓存命中输入近乎免费。智谱限时免费模型恢复收费后按表列价格计费。</p>
+     </section>
+ 
+     <!-- ── International ──────────────────────────── -->
+@@ -1698,7 +1761,7 @@
+ 
+     <!-- ── Disclaimer ─────────────────────────────── -->
+     <div class="disclaimer">
+-      <strong>免责声明：</strong>本报告数据截至 2026 年 7 月 17 日，大模型 API 免费政策和定价调整频繁，使用前请务必访问各平台官网确认最新政策。标注 [P0] 的数据来自官方定价页，标注 [P2] 的数据来自行业汇总文章，可能存在滞后。本报告不构成任何投资或采购建议。
++      <strong>免责声明：</strong>本报告数据截至 2026 年 7 月 21 日，大模型 API 免费政策和定价调整频繁，使用前请务必访问各平台官网确认最新政策。标注 [P0] 的数据来自官方定价页，标注 [P2] 的数据来自行业汇总文章，可能存在滞后。本报告不构成任何投资或采购建议。
+     </div>
+ 
+     <!-- ── Sources ────────────────────────────────── -->
+@@ -1727,6 +1790,13 @@
+         <li id="cite-19"><span class="src-num">[19]</span><span class="src-title">OpenCode Zen免费模型大换血！腾讯Hy3空降</span><a href="http://m.toutiao.com/group/7661113792922665512/" target="_blank" rel="noopener">今日头条</a></li>
+         <li id="cite-20"><span class="src-num">[20]</span><span class="src-title">Kimi K3软上线？一百万上下文？</span><a href="http://m.toutiao.com/group/7662415769774424610/" target="_blank" rel="noopener">今日头条</a></li>
+         <li id="cite-21"><span class="src-num">[21]</span><span class="src-title">阶跃星辰 Step Plan，限时免费体验（官方活动页，截至 2026-07-31）</span><a href="https://platform.stepfun.com/step-plan" target="_blank" rel="noopener">https://platform.stepfun.com/step-plan</a></li>
++        <li id="cite-22"><span class="src-num">[22]</span><span class="src-title">DeepSeek V4 正式版 GA 上线 + 峰谷计费，2026-07-20</span><a href="https://cj.sina.cn/articles/view/7879996426/1d5af340a06801fxvk" target="_blank" rel="noopener">新浪财经</a></li>
++        <li id="cite-23"><span class="src-num">[23]</span><span class="src-title">月之暗面发布全球最大开源模型 Kimi K3（2.8 万亿参数）</span><a href="http://m.toutiao.com/group/7664558765160612358/" target="_blank" rel="noopener">今日头条</a></li>
++        <li id="cite-24"><span class="src-num">[24]</span><span class="src-title">Kimi K3 上线两天算力告急，月之暗面暂停 C 端新用户订阅</span><a href="https://m.thepaper.cn/newsDetail_forward_33624561" target="_blank" rel="noopener">澎湃新闻</a></li>
++        <li id="cite-25"><span class="src-num">[25]</span><span class="src-title">阿里 Qwen3.8-Max-Preview 深夜官宣（2.4 万亿参数）</span><a href="http://m.toutiao.com/group/7664616581749555752/" target="_blank" rel="noopener">今日头条</a></li>
++        <li id="cite-26"><span class="src-num">[26]</span><span class="src-title">阿里云百炼 Token Plan 团队版上线</span><a href="https://developer.aliyun.com/article/1749301" target="_blank" rel="noopener">阿里云开发者社区</a></li>
++        <li id="cite-27"><span class="src-num">[27]</span><span class="src-title">商汤科技推出国际版 SenseNova Token Plan（香港及全球市场）</span><a href="http://freequote.aastocks.com/sc/stocks/news/aafn-con/IC4950037/popular-news/INFOCAST" target="_blank" rel="noopener">汇港通讯</a></li>
++        <li id="cite-28"><span class="src-num">[28]</span><span class="src-title">商汤 Token Plan 再进化：国产算力跑通工业级大模型</span><a href="https://www.sensetime.com/cn/news-detail/51170762?categoryId=72" target="_blank" rel="noopener">商汤科技官方</a></li>
+       </ol>
+     </section>
+ 
+-- 
+2.43.0
+
